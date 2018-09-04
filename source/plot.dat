@@ -1,0 +1,4 @@
+set xlabel 'X axis'
+set ylabel 'Y axis'
+plot 'tests/test_points.dat' using 1:2 w points lt rgb 'red' pt 7 title 'tests/test_points.dat'
+pause - 1

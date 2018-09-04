@@ -19,12 +19,12 @@
                 "-Wshadow",
                 "-std=c++11",
                 "-fms-extensions",
-                "source/algorithms.cpp",
+                "source/tasks.cpp",
                 "source/source.cpp",
                 "-Isrc",
                 "-I/usr/local/include",
-                "-I/usr/local/include/eigen3",
-                "-oAlg.out"
+                // "-I/usr/local/include/eigen3",
+                "-oInterview.out"
             ],
             "showOutput": "always",
             "problemMatcher": {
@@ -45,7 +45,7 @@
         },
         {
             "taskName": "Run Experiment",
-            "command": "./AtStruct.out",
+            "command": "./Interview.out",
             "isShellCommand": true
         }
     ]
