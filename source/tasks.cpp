@@ -1,8 +1,10 @@
 #include"tasks.h"
-#include"random"
+#include<fstream>
+#include<random>
 
 void random_pfile_generator(double left_end, double right_end, unsigned int points_number, ostream &output)
 {
+    //making test file
     random_device random_device;
     std::mt19937 generator(random_device());
 
@@ -13,7 +15,9 @@ void random_pfile_generator(double left_end, double right_end, unsigned int poin
     }
 }
 
-void plot(string outputfilename) {
+void plot(string outputfilename) 
+{
+    // plot test file
 	ofstream plot("source/plot.dat");
 	plot << "set xlabel 'X axis'" << endl;
 	plot << "set ylabel 'Y axis'" << endl;
@@ -21,4 +25,9 @@ void plot(string outputfilename) {
 	plot << "pause - 1" << endl;
 
 	system("gnuplot source/plot.dat");
+}
+
+void task_one::nearest_points()
+{
+
 }
