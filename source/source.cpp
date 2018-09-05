@@ -11,8 +11,6 @@ int main()
     ifstream input_file("tests/test_points.dat");
     task_one test(input_file);
     test.nearest_points();
-    // test.show_points();
-    // test.nearest_points();
     test.show_results();
     plot("tests/test_points.dat");
 }
